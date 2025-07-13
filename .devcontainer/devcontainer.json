@@ -1,0 +1,20 @@
+{
+    "name": "Go IT Python Homework 05",
+    "context": "..",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+              "ms-python.python",
+              "ms-azuretools.vscode-docker",
+              "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "forwardPorts": [8888]
+}
