@@ -123,7 +123,7 @@ def run_command(supported_commands, command_to_execute: str, *args):
 
         return decorated_func(*args, **named_params)
     else:
-        raise IndexError(f"Invalid command. Please use one of the supported commands: ", ", ".join(cmd.replace("_", "-") for cmd in supported_commands.keys()))
+        raise IndexError(f"Invalid command. Please use one of the supported commands: {", ".join(cmd.replace("_", "-") for cmd in supported_commands.keys())}")
 
 
 def main():
